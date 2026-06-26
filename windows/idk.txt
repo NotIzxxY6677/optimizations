@@ -1,0 +1,8 @@
+# Enable UTC in Windows 11 Pro.
+
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+
+New > DWORD (32-bit) Value > RealTimeIsUniversal 
+Value Data = 1
+
+Recommended time server (NON-SMEARING) = time.cloudflare.com
