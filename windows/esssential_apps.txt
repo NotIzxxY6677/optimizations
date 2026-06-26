@@ -13,5 +13,6 @@ winget install -e --id=REALiX.HWiNFO
 winget install -e --id=Klocman.BulkCrapUninstaller
 winget install -e --id=BleachBit.BleachBit
 
+winget install -e --id=DNSCrypt.dnscrypt-proxy
 winget install -e --id=Notepad++.Notepad++
 winget install -e --id=VSCodium.VSCodium
