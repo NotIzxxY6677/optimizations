@@ -1,4 +1,4 @@
-# Enable UTC in Windows 11 Pro.
+# Enable UTC in Windows 10/11 Pro.
 
 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 
