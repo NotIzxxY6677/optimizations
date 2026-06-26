@@ -4,3 +4,16 @@ PotPlayer + LAV Filters Setup:
    - LAV Splitter Source
    - LAV Video Decoder (Double-click -> Hardware Decoder to use: D3D11 -> Hardware Device to use: Select your GPU)
    - LAV Audio Decoder (Double-click -> Mixing -> If using Headphones/Stereo Speakers: Enable Mixing -> Stereo -> Check "Don't mix Stereo Sources". *Leave unchecked if using true surround sound or Virtual 3D spatial software*)
+
+OBS Studio (Intel Specifics/Laptop)
+File > Settings > Output
+Set Output Mode to Advanced:
+Streaming/Recording(Type:Standard) Settings:
+Audio Encoder: FFmpeg AAC (or libfdk AAC on Linux)
+Video Encoder:
+  -> Use HEVC if Intel 11th+ Gen [Windows: QuickSync HEVC | Linux: FFmpeg VAAPI HEVC]
+  -> Use H.264 if Intel 8th-10th Gen [Windows: QuickSync H.264 | Linux: FFmpeg VAAPI H.264]
+Encoder Settings:
+Rate Control: ICQ
+ICQ Quality: 23 (Good balance) or 24 (Saves slightly more battery)
+Target Usage: TU5 (Fast)
