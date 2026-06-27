@@ -11,7 +11,7 @@ Output Mode: Advanced
 Recording(Type: Standard)
 Recording Format: Matroska Video (.mkv)
 Video Encoder: QuickSync HEVC (Fallback: x264)
-Audio Encoder: CoreAudio AAC (Fallback: FFmpeg AAC) [Note: You will have to install Apple iTunes in order to use CoreAudio AAC,*winget install -e --id=Apple.iTunes*)
+Audio Encoder: CoreAudio AAC (Fallback: FFmpeg Opus , FFmpeg AAC) [Note: You will have to install Apple iTunes in order to use CoreAudio AAC,*winget install -e --id=Apple.iTunes*)
 Encoder Settings:
 Rate Control: ICQ
 ICQ Quality: 23 (default) or 24 (Saves ~10-15% storage space)
