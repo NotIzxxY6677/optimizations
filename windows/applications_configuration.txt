@@ -5,18 +5,16 @@ PotPlayer + LAV Filters Setup:
    - LAV Video Decoder (Double-click -> Hardware Decoder to use: D3D11 -> Hardware Device to use: Select your GPU)
    - LAV Audio Decoder (Double-click -> Mixing -> If using Headphones/Stereo Speakers: Enable Mixing -> Stereo -> Check "Don't mix Stereo Sources". *Leave unchecked if using true surround sound or Virtual 3D spatial software*)
 
-OBS Studio (Intel Specifics/Laptop)
-File > Settings > Output
-Set Output Mode to Advanced:
-Streaming/Recording(Type:Standard) Settings:
+OBS Studio (Intel Laptop - Windows)
+File > Settings > Output -> Recording Tab:
+Output Mode: Advanced
+Recording(Type: Standard)
 Recording Format: Matroska Video (.mkv)
-Audio Encoder: FFmpeg AAC (or libfdk AAC on Linux)
-Video Encoder:
-  -> Use HEVC if Intel 11th+ Gen [Windows: QuickSync HEVC | Linux: FFmpeg VAAPI HEVC]
-  -> Use H.264 if Intel 8th-10th Gen [Windows: QuickSync H.264 | Linux: FFmpeg VAAPI H.264]
+Video Encoder: QuickSync HEVC (Fallback: x264)
+Audio Encoder: CoreAudio AAC (Fallback: FFmpeg AAC) [Note: You will have to install Apple iTunes in order to use CoreAudio AAC,*winget install -e --id=Apple.iTunes*)
 Encoder Settings:
 Rate Control: ICQ
-ICQ Quality: 23 (Good balance) or 24 (Saves slightly more battery)
-Target Usage: TU5 (Fast)
+ICQ Quality: 23 (default) or 24 (Saves ~10-15% storage space)
+Target Usage: Balanced
 File > Settings > Advanced
 Recording: Automatically remux to mp4
