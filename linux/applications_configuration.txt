@@ -1,0 +1,13 @@
+OBS Studio (Intel Laptop - Linux)
+File > Settings > Output -> Recording Tab:
+Output Mode: Advanced
+Streaming/Recording(Type: Standard)
+Recording Format: Matroska Video (.mkv)
+Audio Encoder: libfdk AAC
+Video Encoder: QuickSync HEVC
+Encoder Settings:
+Rate Control: ICQ
+ICQ Quality: 23 (default) or 24 (Saves ~10-15% storage space)
+Target Usage / Preset: TU5: Fast
+File > Settings > Advanced
+Recording: Automatically remux to mp4 
