@@ -1,12 +1,12 @@
 PotPlayer + LAV Filters Setup:
 1. F5 (Preferences) > Filter Control > Filter Priority (Overall) 
-2. Add registered filter -> Add these 3 and set to "Prefer":
+2. Add registered filter > Add these 3 and set to "Prefer":
    - LAV Splitter Source
    - LAV Video Decoder ( Double-click -> Hardware Decoder to use: D3D11 -> Hardware Device to use: Automatic(Native) )
    - LAV Audio Decoder ( Double-click -> Mixing -> If using Headphones/Stereo Speakers: Enable Mixing -> Stereo -> Check "Don't mix Stereo Sources". *Leave unchecked if using true surround sound or Virtual 3D spatial software* )
 
 OBS Studio (Intel Laptop - 1080p@60Hz, Recording at: 1080p@30Hz, iGPU: Intel(R) UHD Graphics 620)
-File > Settings > Output -> Recording Tab:
+File > Settings > Output > Recording Tab:
 Output Mode: Advanced
 Recording(Type: Standard)
 Recording Format: Matroska Video (.mkv)
@@ -18,3 +18,6 @@ ICQ Quality: 23 (default) or 24 (Saves ~10-15% storage space)
 Target Usage: TU5: Fast
 File > Settings > Advanced
 Recording: Automatically remux to mp4
+
+Windows Recommended Changes (Navigation based on Windows 11 Pro):
+Settings > Time & language > Date & time > Sync now > Change the time server to time.cloudflare.com. It uses standard (non-smearing) NTP instead of leap-smearing, and... well, I'd rather use Cloudflare's time service anyway.
