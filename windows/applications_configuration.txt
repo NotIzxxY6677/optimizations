@@ -5,7 +5,7 @@ PotPlayer + LAV Filters Setup:
    - LAV Video Decoder (Double-click -> Hardware Decoder to use: D3D11 -> Hardware Device to use: Select your GPU)
    - LAV Audio Decoder (Double-click -> Mixing -> If using Headphones/Stereo Speakers: Enable Mixing -> Stereo -> Check "Don't mix Stereo Sources". *Leave unchecked if using true surround sound or Virtual 3D spatial software*)
 
-OBS Studio (Intel Laptop - Windows 11 Pro - 1080p@60Hz, Recording at: 1080p@30Hz)
+OBS Studio (Intel Laptop - 1080p@60Hz, Recording at: 1080p@30Hz, iGPU: Intel(R) UHD Graphics 620)
 File > Settings > Output -> Recording Tab:
 Output Mode: Advanced
 Recording(Type: Standard)
