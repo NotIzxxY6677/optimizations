@@ -1,0 +1,15 @@
+podman run \
+                          --detach \
+                          --restart unless-stopped \
+                          --label "io.containers.autoupdate=registry" \
+                          --security-opt label=disable \
+                          --name myjellyfin \
+                          --publish 8096:8096/tcp \
+                          --device /dev/dri/renderD128:/dev/dri/renderD128 \
+                          --device /dev/dri/renderD129:/dev/dri/renderD129 \
+                          --user $(id -u):$(id -g) \
+                          --userns keep-id \
+                          --volume jellyfin-cache:/cache:Z \
+                          --volume jellyfin-config:/config:Z \
+                          --mount type=bind,source=/run/media/pc/Local/qBittorrent/,destination=/media,ro=true,relabel=private \
+                          docker.io/jellyfin/jellyfin:latest
