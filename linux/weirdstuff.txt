@@ -13,3 +13,11 @@ podman run \
                           --volume jellyfin-config:/config:Z \
                           --mount type=bind,source=/run/media/pc/Local/qBittorrent/,destination=/media,ro=true,relabel=private \
                           docker.io/jellyfin/jellyfin:latest
+
+# To Install
+sudo dnf download cloudflare-warp
+sudo rpm -ivh --nodeps cloudflare-warp-*.x86_64.rpm
+
+# To Update
+sudo dnf download cloudflare-warp
+sudo rpm -Uvh --nodeps cloudflare-warp-*.x86_64.rpm
