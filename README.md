@@ -1,11 +1,7 @@
 # Optimizations
 
-Just system optimizations in a nutshell—scripts, configs, and tweaks for Linux, Windows, and miscellaneous setups.
-
-## Note on AI
-
-I used a lot of AI to put these together. Mostly Gemini Pro Extended and Claude Opus 4.8 (effort: max, thinking: enabled), along with my own testing and digging around. 
+Literally just system optimizations in a nutshell—a personal collection of scripts, configurations, and tweaks for Linux, Windows, and miscellaneous setups.
 
 ## Usage
 
-I made these for my own hardware. If you copy them, read the code first. Don't blindly run root scripts on your machine.
+These configurations are built around my specific workflow and hardware. If you are adapting any of these scripts for your own machine, review the source code first. Never run root or administrator scripts without verifying what they do.
