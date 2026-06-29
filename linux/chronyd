@@ -1,0 +1,18 @@
+# =============================================================================
+#  /etc/sysconfig/chronyd
+#  chronyd(8) command-line flags, read by chronyd.service via EnvironmentFile.
+#  This filename is fixed by the systemd unit — do not rename.
+# =============================================================================
+#
+#   -s    Set the system clock at startup from the RTC; and if the driftfile's
+#         mtime is newer than both the current time and the RTC, advance the
+#         clock to that mtime. Floors the clock to "last time chronyd ran"
+#         BEFORE any hostname is resolved, so strict DoT cert validation
+#         succeeds and the DNS<->time cold-boot deadlock cannot form.
+#   -F 2  Fedora default seccomp system-call filter level (defence in depth).
+#
+#   No -4 / -6 : hostnames resolve to A and AAAA; IPv6 is used automatically
+#                when present, and skipped (fast ENETUNREACH, not a timeout)
+#                when absent — future-proof, no manual reconfiguration.
+#
+OPTIONS="-s -F 2"
