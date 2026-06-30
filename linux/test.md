@@ -10,17 +10,16 @@ chronyc sources -v
 
 ## 2) Set the clock to roughly "now" so DoT/NTS certs validate.
 
-**(a) Simplest — type an approximate current LOCAL wall-clock time:**
+(a) Simplest — type an approximate current LOCAL wall-clock time:
 
 ```bash
 sudo date -s 'YYYY-MM-DD HH:MM:SS'
 ```
 
-**(b) Or pull rough time from a plain-HTTP Date header (no DNS, no TLS).**
-1.1.1.1 works; any reachable HTTP server IP (incl. your gateway) does.
+(b) Or pull rough time from a plain-HTTP Date header (no DNS, no TLS). 1.1.1.1 works; any reachable HTTP server IP (incl. your gateway) does.
 
 ```bash
-sudo date -s "$(curl -sI [http://1.1.1.1](http://1.1.1.1) | tr -d '\r' | sed -n 's/^[Dd]ate: //p')"
+sudo date -s "$(curl -sI http://1.1.1.1 | tr -d '\r' | sed -n 's/^[Dd]ate: //p')"
 ```
 
 ## 3) Force chrony to re-resolve, re-key (NTS-KE), and step to true time
