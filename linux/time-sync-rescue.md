@@ -1,3 +1,4 @@
+```bash
 # ============================================================
 #  EMERGENCY: wrong clock on boot, time won't sync
 # ============================================================
@@ -31,3 +32,4 @@ sudo hwclock --systohc
 #    Persists only if the CMOS battery is healthy. A dead battery loses the
 #    RTC at power-off; '-s' re-floors each boot, but replacing the battery is
 #    the only permanent fix.
+```
