@@ -1,4 +1,4 @@
-OBS Studio (Intel Laptop - Linux)
+OBS Studio (Intel Laptop - 1080p@60Hz, Recording at: 1080p@30Hz, iGPU: Intel(R) UHD Graphics 620)
 File > Settings > Output -> Recording Tab:
 Output Mode: Advanced
 Recording(Type: Standard)
